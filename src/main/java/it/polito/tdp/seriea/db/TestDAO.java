@@ -14,9 +14,9 @@ public class TestDAO {
 		System.out.println(seasons);
 		System.out.println("Seasons # rows: " + seasons.size());
 
-		List<Team> teams = dao.listTeams();
-		System.out.println(teams);
-		System.out.println("Teams # rows: " + teams.size());
+		//List<Team> teams = dao.listTeams();
+		//System.out.println(teams);
+		//System.out.println("Teams # rows: " + teams.size());
 	}
 
 }
