@@ -177,17 +177,12 @@ public class Model {
 		
 		this.best = new ArrayList<>();
 		
-		if(this.vertici.size()==1) {
-			this.best = new ArrayList<>(this.vertici);
-			return;
-		}
+		
 		
 		for(int i  = 1; i<this.vertici.size(); i++) {
 			this.stagioniConsecutive.put(this.vertici.get(i-1), this.vertici.get(i));
 			
 		}
-		
-		System.out.println(this.stagioniConsecutive+"\n");
 		
 		this.percorso = new TreeMap<>();
 		this.ultimaStagione = this.vertici.get(this.vertici.size()-1);
@@ -202,8 +197,6 @@ public class Model {
 
 
 	private void ricorsione(List<Season> parziale) {
-		
-		System.out.println(parziale+"\n");
 		
 		Season ultimo = parziale.get(parziale.size()-1);
 		
